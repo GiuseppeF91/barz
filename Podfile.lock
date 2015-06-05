@@ -1,0 +1,10 @@
+PODS:
+  - DateTools (1.5.0)
+
+DEPENDENCIES:
+  - DateTools
+
+SPEC CHECKSUMS:
+  DateTools: 7df78f0c4719eb28cfd2d58a90fafd036e73156c
+
+COCOAPODS: 0.35.0

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeView">
+            <connections>
+                <outlet property="envelopeLabel" destination="cjx-kl-1a9" id="aE6-YH-bMC"/>
+                <outlet property="facebookLabel" destination="gaG-nb-6fT" id="m62-R5-ozS"/>
+                <outlet property="phoneLabel" destination="gaG-nb-6fT" id="OOd-uo-nd8"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wf-8f-ELf">
+                    <rect key="frame" x="13" y="506" width="294" height="52"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="ByG-iR-leH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                    <state key="normal" title=" SIGN IN">
+                        <color key="titleColor" white="1" alpha="0.88" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="actionLogin:" destination="-1" eventType="touchUpInside" id="DaA-Zf-XSa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rka-Wf-v14">
+                    <rect key="frame" x="167" y="354" width="140" height="52"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="6ID-e8-ESG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                    <state key="normal" title="     EMAIL">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="actionRegister:" destination="-1" eventType="touchUpInside" id="60O-Xg-COz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oy6-uy-RRG">
+                    <rect key="frame" x="13" y="354" width="141" height="52"/>
+                    <color key="backgroundColor" red="0.36000131053257517" green="0.5436292056701123" blue="0.93317484919571048" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="EDQ-5v-jX1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                    <state key="normal" title="     FACEBOOK">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="26"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="actionFacebook:" destination="-1" eventType="touchUpInside" id="eoM-Iz-u9X"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already a member?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkT-UW-bv2">
+                    <rect key="frame" x="93" y="496" width="134" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="0.77000000000000002" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="By continuing you agree to the Terms of Service and Privacy Policy." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNn-Xz-Dnr">
+                    <rect key="frame" x="25" y="414" width="270" height="62"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.4272277607359532" green="0.44496044623206915" blue="0.4922398626005362" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaG-nb-6fT">
+                    <rect key="frame" x="28" y="362" width="17" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjx-kl-1a9">
+                    <rect key="frame" x="197" y="365" width="15" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up with" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIb-d7-XLN">
+                    <rect key="frame" x="120" y="307" width="86" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bazrLogoForAppVector.png" translatesAutoresizingMaskIntoConstraints="NO" id="WtK-9G-ahH">
+                    <rect key="frame" x="102" y="102" width="116" height="126"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="126" id="fAM-Kh-3Zy"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.12156862745098039" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="oy6-uy-RRG" firstAttribute="top" secondItem="OIb-d7-XLN" secondAttribute="bottom" constant="29" id="4uf-eC-sM7"/>
+                <constraint firstAttribute="trailing" secondItem="WtK-9G-ahH" secondAttribute="trailing" constant="102" id="5Lp-Nt-90Y"/>
+                <constraint firstItem="WtK-9G-ahH" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="102" id="77H-ur-Jno"/>
+                <constraint firstItem="cjx-kl-1a9" firstAttribute="centerY" secondItem="Rka-Wf-v14" secondAttribute="centerY" id="9eB-Xe-EWP"/>
+                <constraint firstItem="oy6-uy-RRG" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="13" id="9pL-pG-Sdx"/>
+                <constraint firstItem="Rka-Wf-v14" firstAttribute="leading" secondItem="oy6-uy-RRG" secondAttribute="trailing" constant="13" id="Cxo-EO-VFt"/>
+                <constraint firstItem="gaG-nb-6fT" firstAttribute="centerY" secondItem="oy6-uy-RRG" secondAttribute="centerY" id="FRv-NL-aas"/>
+                <constraint firstItem="lNn-Xz-Dnr" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="25" id="HZ5-N0-caS"/>
+                <constraint firstAttribute="trailing" secondItem="Rka-Wf-v14" secondAttribute="trailing" constant="13" id="Kfb-ZX-QJ9"/>
+                <constraint firstItem="7Wf-8f-ELf" firstAttribute="top" secondItem="ZkT-UW-bv2" secondAttribute="bottom" constant="-8" id="L3q-TH-uYu"/>
+                <constraint firstAttribute="centerX" secondItem="7Wf-8f-ELf" secondAttribute="centerX" constant="-0.5" id="Sri-GS-gXB"/>
+                <constraint firstItem="gaG-nb-6fT" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="28" id="VSF-M3-sxU"/>
+                <constraint firstItem="gaG-nb-6fT" firstAttribute="centerY" secondItem="oy6-uy-RRG" secondAttribute="centerY" id="WGG-lf-PxA"/>
+                <constraint firstItem="cjx-kl-1a9" firstAttribute="top" secondItem="Rka-Wf-v14" secondAttribute="bottom" constant="-41" id="YFl-aE-vqu"/>
+                <constraint firstItem="Rka-Wf-v14" firstAttribute="leading" secondItem="oy6-uy-RRG" secondAttribute="trailing" constant="13" id="Yed-I3-YhW"/>
+                <constraint firstItem="WtK-9G-ahH" firstAttribute="top" secondItem="1" secondAttribute="top" constant="102" id="c7Y-FM-124"/>
+                <constraint firstAttribute="trailing" secondItem="lNn-Xz-Dnr" secondAttribute="trailing" constant="25" id="cYM-qd-JJO"/>
+                <constraint firstItem="oy6-uy-RRG" firstAttribute="top" secondItem="Rka-Wf-v14" secondAttribute="top" id="cuA-54-mgW"/>
+                <constraint firstItem="oy6-uy-RRG" firstAttribute="width" secondItem="Rka-Wf-v14" secondAttribute="width" id="div-cY-4ON"/>
+                <constraint firstAttribute="centerX" secondItem="ZkT-UW-bv2" secondAttribute="centerX" id="eaZ-mS-wex"/>
+                <constraint firstItem="Rka-Wf-v14" firstAttribute="leading" secondItem="cjx-kl-1a9" secondAttribute="trailing" constant="-45" id="faX-ZZ-0Ab"/>
+                <constraint firstItem="oy6-uy-RRG" firstAttribute="leading" secondItem="7Wf-8f-ELf" secondAttribute="leading" id="gFe-6m-K7K"/>
+                <constraint firstItem="lNn-Xz-Dnr" firstAttribute="top" secondItem="Rka-Wf-v14" secondAttribute="bottom" constant="8" id="hnJ-Zc-p3M"/>
+                <constraint firstItem="ZkT-UW-bv2" firstAttribute="top" secondItem="lNn-Xz-Dnr" secondAttribute="bottom" constant="20" id="ihh-xw-LgJ"/>
+                <constraint firstAttribute="centerX" secondItem="OIb-d7-XLN" secondAttribute="centerX" constant="-2.5" id="ja2-7w-NAI"/>
+                <constraint firstAttribute="bottom" secondItem="oy6-uy-RRG" secondAttribute="bottom" constant="162" id="kMf-lc-RJ3"/>
+                <constraint firstAttribute="bottom" secondItem="7Wf-8f-ELf" secondAttribute="bottom" constant="10" id="yhp-Un-pKP"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="371" y="349"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bazrLogoForAppVector.png" width="291" height="308"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
